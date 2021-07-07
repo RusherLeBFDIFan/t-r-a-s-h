@@ -1,12 +1,12 @@
 
 var firebaseConfig = {
-      apiKey: "AIzaSyBeqKbuYavA4ejl--3QCjAU-EW4UIiKb8U",
-      authDomain: "trashy-d5806.firebaseapp.com",
-      databaseURL: "https://trashy-d5806-default-rtdb.firebaseio.com",
-      projectId: "trashy-d5806",
-      storageBucket: "trashy-d5806.appspot.com",
-      messagingSenderId: "523392228228",
-      appId: "1:523392228228:web:2bd00b060443d8ef6fdbd1"
+  apiKey: "AIzaSyBeqKbuYavA4ejl--3QCjAU-EW4UIiKb8U",
+  authDomain: "trashy-d5806.firebaseapp.com",
+  databaseURL: "https://trashy-d5806-default-rtdb.firebaseio.com",
+  projectId: "trashy-d5806",
+  storageBucket: "trashy-d5806.appspot.com",
+  messagingSenderId: "523392228228",
+  appId: "1:523392228228:web:c634167d5be5854e6fdbd1"
     };
 
     function addroom(){
@@ -15,7 +15,7 @@ var firebaseConfig = {
             purpose: "adding room name"
         });
       localStorage.setItem("roomname",roomname);
-      window.location = "kwitter_page.html";
+      window.location = "litter_page.html";
     }
     
     function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
@@ -29,5 +29,5 @@ var firebaseConfig = {
     function redirect(name){
       console.log(name);
       localStorage.setItem("roomname",name);
-      window.location = "kwitter_page.html";
+      window.location = "litter_page.html";
     }
