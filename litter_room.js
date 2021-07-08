@@ -1,4 +1,3 @@
-
 var firebaseConfig = {
   apiKey: "AIzaSyBeqKbuYavA4ejl--3QCjAU-EW4UIiKb8U",
   authDomain: "trashy-d5806.firebaseapp.com",
@@ -6,8 +5,9 @@ var firebaseConfig = {
   projectId: "trashy-d5806",
   storageBucket: "trashy-d5806.appspot.com",
   messagingSenderId: "523392228228",
-  appId: "1:523392228228:web:c634167d5be5854e6fdbd1"
-    };
+  appId: "1:523392228228:web:8a8ffa6706ec93366fdbd1"
+};
+firebase.initializeApp(firebaseConfig);
 
     function addroom(){
       roomname = document.getElementById("room_name").value;
